@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import MovieListsHeader from "../components/MovieListsHeader";
+import logo from "../assets/images/netflix-logo.png";
 
 const MovieDescription = () => {
   return (
-    <div>MovieDescription</div>
-  )
-}
+    <div>
+      <header className="header">
+        <MovieListsHeader logo={logo} />
+      </header>
+    </div>
+  );
+};
 
-export default MovieDescription
+export default MovieDescription;

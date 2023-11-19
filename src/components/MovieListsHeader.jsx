@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/header.css";
+import "../styles/movie-lists-header.css";
 // import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const MovieListsHeader = (props) => {
   return (
     <div className="headerContainer">
       <div className="header">
@@ -21,4 +21,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default MovieListsHeader;

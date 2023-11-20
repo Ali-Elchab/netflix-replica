@@ -4,7 +4,9 @@ import EnjoyTv from '../components/EnjoyTv'
 import SectionsSeperator from '../components/SectionsSeperator' 
 import '../styles/hero-page.css'
 import Download from '../components/Download'
-// import Header from '../components/header'
+import Stream from '../components/Stream'
+
+
 const Login = () => {
   return (
     <div>
@@ -14,6 +16,8 @@ const Login = () => {
         <SectionsSeperator/>
         <Download/>
         <SectionsSeperator/>
+        <Stream />
+
         
     </div>
     

@@ -37,3 +37,67 @@
   transition-duration: 0.75s;
   width: 100%;
 }
+
+.watchMore {
+  margin-top: -96px;
+  background: #181818;
+  font-size: 24px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.watchMore::before {
+  background: linear-gradient(180deg, transparent 0, #181818);
+  bottom: 100%;
+  content: " ";
+  height: 240px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+.watchWrapper {
+  margin: 0;
+  max-width: 730px;
+  background: #181818;
+  font-size: 24px;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.watchWrapper h2 {
+  font-weight: 500;
+  margin: 12px 0 4px;
+}
+
+.watchWrapper p {
+  margin: 32px 0;
+}
+
+.watchWrapper .btn {
+  margin: 8px 8px 8px 0;
+  font-size: 20px;
+  min-height: 48px;
+  min-width: 112px;
+  padding: 14px 2em;
+}
+
+.tudumPromo {
+  margin: 100px auto -50px;
+  width: 90%;
+  font-size: 16px;
+}
+
+.tudumPromo a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.tudumPromo a:hover {
+  text-decoration: underline;
+}

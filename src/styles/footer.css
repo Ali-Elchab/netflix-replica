@@ -1,0 +1,109 @@
+.footerContainer {
+  color: #737373;
+  font-size: 1em;
+  margin-top: 80px;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.footerWrapper {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 90%;
+}
+
+.top {
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.top a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+.footerLinks {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
+}
+
+.footerLinkItem {
+  list-style: none;
+  margin-left: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 22px 0 0;
+  vertical-align: top;
+  width: 25%;
+}
+
+.footerLink {
+  color: #737373;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.selectionContainer {
+  margin-top: 20px;
+}
+
+.selectionWrapper {
+  width: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.selectArrow {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: 13px;
+}
+
+.globeIcon {
+  top: 14px;
+  width: 15%;
+  height: 38%;
+  position: absolute;
+  left: 15px;
+}
+
+.selectBox {
+  padding: 15px;
+  padding-right: 26px;
+  text-indent: 0;
+  padding-left: 45px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  appearance: none;
+  border-radius: 2px;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  text-transform: none;
+}
+
+.dropdownIcon {
+  width: 9%;
+  top: 16px px;
+  right: 9px;
+  height: 23%;
+  position: absolute;
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/MovieCards.css";
+import "../styles/movie-cards.css";
 // import { json } from "react-router-dom";
 
 const MovieCards = () => {
@@ -59,7 +59,7 @@ const MovieCards = () => {
               }}
             >
               {moviesByGenre[genreId].map((movie) => (
-                <li key={movie.id}>
+                <li className="movieCard" key={movie.id}>
                   <a href="/" className="moviePoster">
                     <img
                       src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}

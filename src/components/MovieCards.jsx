@@ -12,9 +12,7 @@ const MovieCards = () => {
     const apiKey = "c3abedee67f9d0c6922c117110e1f13a";
 
     // Fetch Genres
-    fetch(
-      `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
-    )
+    fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
       .then((response) => response.json())
       .then((data) => {
         const genresMap = {};
@@ -26,9 +24,7 @@ const MovieCards = () => {
       .catch((error) => console.log(error));
 
     // Fetch Movies
-    fetch(
-      `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc`
-    )
+    fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc`)
       .then((response) => response.json())
       .then((data) => {
         setMovieList(data.results);
@@ -56,16 +52,14 @@ const MovieCards = () => {
             <ul
               style={{
                 display: "flex",
+                overflowX: "hidden",
                 listStyleType: "none",
               }}
             >
               {moviesByGenre[genreId].map((movie) => (
                 <li className="movieCard" key={movie.id}>
                   <a href="/moviesdescription" className="moviePoster">
-                    <img
-                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                      alt={movie.title}
-                    />
+                    <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
                   </a>
                   <p className="movieTitle">
                     <a href="/moviesdescription">{movie.title}</a>
@@ -73,6 +67,7 @@ const MovieCards = () => {
                 </li>
               ))}
             </ul>
+            <div className="movies-list-arrow">&gt;</div>
           </div>
         </div>
       ))}

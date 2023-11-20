@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
+import HeroPage from '../components/HeroPage' 
+import '../styles/Login.css'
 // import Header from '../components/header'
 const Login = () => {
   return (
-    <div><Header /></div>
-    
-    
-
+    <div><HeroPage />
+    </div>
     
   )
 }

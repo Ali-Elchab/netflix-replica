@@ -21,6 +21,11 @@ const MoviesList = () => {
           <div className="movieCards">
             <MovieCards />
           </div>
+          <div className="watchMore">
+            <div className="watchWrapper">
+              <h2>There’s even more to watch.</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>

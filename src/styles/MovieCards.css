@@ -1,0 +1,48 @@
+.movieCards {
+  margin-top: 40px;
+  position: relative;
+}
+
+.genreTitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.movieList {
+  position: relative;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  margin: 16px 0;
+  padding-bottom: 16px;
+}
+
+li {
+  width: 28vw;
+  max-width: 299px;
+  display: inline-table;
+  flex: 1 0 auto;
+  list-style-type: none;
+  margin: 0 12px 0 0;
+  position: relative;
+}
+
+img {
+  height: 15vw;
+  width: 100%;
+  max-height: 168px;
+}
+
+.movieTitle {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.movieTitle a {
+  text-decoration: none;
+  color: #fff;
+}

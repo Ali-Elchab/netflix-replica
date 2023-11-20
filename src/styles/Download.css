@@ -1,0 +1,38 @@
+.download{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black
+}
+
+.downloadDescription{
+    width: 50%;
+    height: 100%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.downloadDescription > p:nth-child(1){
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;   
+}
+
+.downloadDescription > p:nth-child(2){
+    font-size: 25px;
+    color: white;
+    margin-top: 2px;
+    margin-right: 39%;
+   
+}
+
+.phoneImage{
+    margin-top: 20px;
+    margin-left: 20%;
+}

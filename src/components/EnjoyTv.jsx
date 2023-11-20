@@ -13,7 +13,7 @@ const EnjoyTv = () => {
             </div>
     
             <div className="enjoyTvImage">
-                <video src={enjoyVideo} className='tvVideo' autoPlay muted playsInline></video>
+                <video src={enjoyVideo} className='tvVideo' autoPlay loop muted playsInline></video>
                 <img src={tv} alt="" className="tvImage" />
             </div>
         </div>

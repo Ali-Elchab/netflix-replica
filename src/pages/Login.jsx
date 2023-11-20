@@ -1,10 +1,16 @@
 import React from 'react'
 import HeroPage from '../components/HeroPage' 
-import '../styles/Login.css'
+import EnjoyTv from '../components/EnjoyTv'
+import SectionsSeperator from '../components/SectionsSeperator' 
+import '../styles/HeroPage.css'
 // import Header from '../components/header'
 const Login = () => {
   return (
-    <div><HeroPage />
+    <div>
+        <HeroPage />
+        <SectionsSeperator/>
+        <EnjoyTv />
+        
     </div>
     
   )

@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link } from 'react-router-dom';
 // import Dropdown from './DropDown';<Dropdown/>
-import '../styles/Login.css'
+import '../styles/HeroPage.css'
 import logo from'../assets/images/Netflix_2015_logo.svg.png'
 import languageIcon from'../assets/images/languageIcon.svg'
 import listIcon from'../assets/images/listIcon.svg'
 
-const HeroPage = (props) => {
+const HeroPage = () => {
   return (
   <div className='loginPage'>
     <div className='heroPage'>
@@ -25,7 +25,7 @@ const HeroPage = (props) => {
             </div>
           </div>
         </div>
-      
+
         <div className="heroDescription">
           <h1>Unlimited movies, TV shows, and more</h1>
           <p>Watch anywhere. Cancel anytime.</p>
@@ -35,7 +35,7 @@ const HeroPage = (props) => {
             <button className='startedButton'>Get Started &gt; </button>
           </Link>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
   )

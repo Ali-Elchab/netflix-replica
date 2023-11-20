@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link } from 'react-router-dom';
 // import Dropdown from './DropDown';<Dropdown/>
-import '../styles/HeroPage.css'
+import '../styles/hero-page.css'
 import logo from'../assets/images/Netflix_2015_logo.svg.png'
 import languageIcon from'../assets/images/languageIcon.svg'
 import listIcon from'../assets/images/listIcon.svg'

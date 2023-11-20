@@ -2,7 +2,7 @@ import React from 'react'
 import HeroPage from '../components/HeroPage' 
 import EnjoyTv from '../components/EnjoyTv'
 import SectionsSeperator from '../components/SectionsSeperator' 
-import '../styles/HeroPage.css'
+import '../styles/hero-page.css'
 import Download from '../components/Download'
 // import Header from '../components/header'
 const Login = () => {

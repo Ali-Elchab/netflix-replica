@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link } from 'react-router-dom';
-import '../styles/EnjoyTv.css'
+import '../styles/enjoy-tv.css'
 import tv from '../assets/images/tv.png'
+import enjoyVideo from '../assets/videos/enjoy-tv.mp4'
 
 const EnjoyTv = () => {
 
@@ -11,8 +11,9 @@ const EnjoyTv = () => {
                 <p>Enjoy on your TV</p>
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast,<br/>Apple TV, Blu-ray players, and more.</p>
             </div>
-
+    
             <div className="enjoyTvImage">
+                <video src={enjoyVideo} className='tvVideo' autoPlay muted playsInline></video>
                 <img src={tv} alt="" className="tvImage" />
             </div>
         </div>

@@ -32,6 +32,30 @@
   
 }
 
+.enjoyTvImage{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+
 .tvImage{
-    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.tvVideo{
+    position: absolute;
+    z-index: 1;
+    top: 20.1%;
+    left: 10%;
+    width: 457px;
+    height: 255px;
+    object-fit: cover;
+  
 }

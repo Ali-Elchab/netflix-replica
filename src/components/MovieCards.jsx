@@ -42,7 +42,7 @@ const MovieCards = (genreId) => {
     // Fetch Movies
 
     const fetchAllMovies = async () => {
-      const totalPages = 20;
+      const totalPages = 13;
       const allMovies = [];
       let route = "discover/movie";
       try {

@@ -59,7 +59,11 @@ img {
   color: #fff;
 }
 
-.arrow {
+.arrowLeft {
+  cursor: pointer;
+  color: red;
+}
+.arrowRight {
   cursor: pointer;
   color: red;
 }

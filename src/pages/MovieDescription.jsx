@@ -1,12 +1,12 @@
 import React from "react";
 // import MovieListsHeader from "../components/MovieListsHeader";
 // import logo from "../assets/images/netflix-logo.png";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const MovieDescription = () => {
-  // const { id } = useParams(); // Destructure id from useParams
+  const { id } = useParams(); // Destructure id from useParams
 
-  return <div></div>;
+  return <div>{id}</div>;
 };
 
 export default MovieDescription;

@@ -1,0 +1,130 @@
+
+.dropdownContainer>P{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 20px;
+    margin-top: 70px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.dropdownContainer {
+    width: 100vw;
+    height: 130vh;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: height 300ms ease-in-out;
+  }
+  
+  .dropdownContainer.open {
+    height: 130vh;
+  }
+  
+  .key {
+    width: 80%;
+    height: auto;
+    background-color: rgb(59, 59, 59);
+    margin: 5px 0;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+   
+  }
+  
+  .dropDown {
+    color: white;
+    background-color:rgb(59, 59, 59);
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    padding: 10px; 
+  }
+  
+  .buttonContainer {
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    padding: 10px;
+    font-size: x-large;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+
+  .buttonContainer:hover{
+    background-color: rgb(106, 106, 106);
+  }
+  
+  .dropdown-enter,
+  .dropdown-exit,
+  .dropdown-enter-active,
+  .dropdown-exit-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;
+  }
+  
+  .dropdown-enter-done,
+  .dropdown-exit-done {
+    opacity: 1;
+    height: auto;
+  }
+  
+  .plusIcon{
+    color: white;
+    filter: invert(1);
+    margin-right: 15px;
+   
+  } 
+
+.downText{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+  }
+
+
+.downButtons{
+    width: 50%;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+.downButtons >  input{
+    height:100%;
+    width: 45%;
+    margin-left: 15%;
+    background-color: rgba(0,0,0,.60);
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: rgb(107, 106, 106);
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.startedDownButton{
+    background-color: rgb(229,9,20);
+    border: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    width: 23%;
+    height: 100%;
+    margin-right: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+}

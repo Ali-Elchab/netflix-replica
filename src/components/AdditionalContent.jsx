@@ -6,27 +6,23 @@ const AdditionalContent = () => {
   const [castData, setCastData] = useState([]);
 
   useEffect(() => {
-    const movieId = 820609; // Your movie ID
+    const movieId = 820609;
     const apiKey = "6382d87ef0c27311d6d318b11bd9ec07";
     const movieApiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`;
     const castApiUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`;
 
-    // Fetch movie details
     fetch(movieApiUrl)
       .then((response) => response.json())
       .then((data) => {
-        // Update the state with the fetched movie details
         setMovieDetails(data);
       })
       .catch((error) => {
         console.error("Error fetching movie details:", error);
       });
 
-    // Fetch cast data
     fetch(castApiUrl)
       .then((response) => response.json())
       .then((data) => {
-        // Update the state with the fetched cast data
         setCastData(data.cast);
       })
       .catch((error) => {
@@ -36,7 +32,6 @@ const AdditionalContent = () => {
 
   return (
     <div className="additional-content">
-      {/* Your split-box and text-divider sections */}
       <div className="split-box">
         <div className="split-box-logo">
           <img src={logo} alt="small-logo" />
@@ -58,9 +53,6 @@ const AdditionalContent = () => {
               Download and watch everywhere you go.
             </div>
           </div>
-          {/* Existing detail-box components */}
-          {/* ... */}
-          {/* Adapted detail-box for Genres */}
           <div className="detail-box">
             <div className="detail-title">Genres</div>
             <div className="detail-text">
@@ -68,8 +60,6 @@ const AdditionalContent = () => {
                 movieDetails.genres.map((genre) => genre.name).join(", ")}
             </div>
           </div>
-
-          {/* Adapted detail-box for "This movie is..." */}
           <div className="detail-box">
             <div className="detail-title">This movie is...</div>
             <div className="detail-text">
@@ -82,12 +72,7 @@ const AdditionalContent = () => {
               English - Audio Description, English [Original], French
             </div>
           </div>
-          {/* Adapted detail-box for Audio */}
-          {/* ... */}
         </div>
-        {/* Fetch small description and populate */}
-
-        {/* Adapted cast-section */}
         <div className="cast-section">
           <div className="cast-title">Cast</div>
           <div className="cast-names">

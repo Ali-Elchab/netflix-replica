@@ -5,7 +5,7 @@ import SectionsSeperator from '../components/SectionsSeperator'
 import '../styles/hero-page.css'
 import Download from '../components/Download'
 import Stream from '../components/Stream'
-
+import ForKids from '../components/ForKids'
 
 const Login = () => {
   return (
@@ -17,6 +17,8 @@ const Login = () => {
         <Download/>
         <SectionsSeperator/>
         <Stream />
+        <SectionsSeperator/>
+        <ForKids/>
 
         
     </div>

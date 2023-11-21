@@ -1,7 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/movie-cards.css";
 import { Link } from "react-router-dom";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { fetchMoviesByPage } from "../utils/fetch";
 // import { Link } from "react-router-dom";
 // import { json } from "react-router-dom";
 
@@ -38,12 +39,22 @@ const MovieCards = (genreId) => {
       .catch((error) => console.log(error));
 
     // Fetch Movies
-    fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc`)
-      .then((response) => response.json())
-      .then((data) => {
-        setMovieList(data.results);
-      })
-      .catch((error) => console.log(error));
+
+    const fetchAllMovies = async () => {
+      const totalPages = 14; // Set the total number of pages you want to fetch
+      const allMovies = [];
+
+      try {
+        for (let i = 9; i <= totalPages; i++) {
+          const movies = await fetchMoviesByPage(apiKey, i);
+          allMovies.push(...movies);
+        }
+        setMovieList(allMovies);
+      } catch (error) {
+        console.error("Error fetching all movies:", error);
+      }
+    };
+    fetchAllMovies();
   }, []);
 
   // Organize movies by genre

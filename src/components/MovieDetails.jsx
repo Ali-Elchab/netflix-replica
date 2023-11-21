@@ -43,9 +43,7 @@ const MovieDetails = () => {
           <span className="release-year">{movieData.release_date}</span> |{" "}
           <span className="rating">{movieData.adult ? "18+" : "PG"}</span> |{" "}
           <span className="duration">{movieData.runtime}m</span> |{" "}
-          <span className="genre">
-            {movieData.genres.map((genre) => genre.name).join(", ")}
-          </span>
+          <span className="genre">{movieData.genres.map((genre) => genre.name).join(", ")}</span>
         </div>
         <div className="story-line">{movieData.overview}</div>
         <div className="stars">

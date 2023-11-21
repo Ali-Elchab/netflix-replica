@@ -21,11 +21,7 @@ const MoreLikeThis = () => {
       <h2>More Like This</h2>
       <div className="similar-movies">
         {movies.map((movie, index) => (
-          <img
-            key={index}
-            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-            alt={`Movie ${index + 1}`}
-          />
+          <img key={index} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`Movie ${index + 1}`} />
         ))}
       </div>
     </div>

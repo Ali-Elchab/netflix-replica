@@ -80,7 +80,11 @@ const MovieCards = (genreId) => {
               {moviesByGenre[genreId].map((movie) => (
                 <li className="movieCard" key={movie.id}>
                   <Link to={`/moviesdescription/${movie.id}`}>
-                    <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+                    <img
+                      className="poster-image"
+                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      alt={movie.title}
+                    />
                   </Link>
                   <p className="movieTitle">
                     <a href="/moviesdescription">{movie.title}</a>

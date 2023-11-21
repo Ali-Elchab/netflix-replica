@@ -8,6 +8,7 @@ import Stream from "../components/Stream";
 import ForKids from "../components/ForKids";
 import DropDown from "../components/DropDown";
 import Footer from "../components/Footer";
+import "../styles/utilities.css";
 
 const Login = () => {
   return (

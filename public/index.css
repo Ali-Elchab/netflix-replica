@@ -62,3 +62,9 @@ body {
   white-space: nowrap;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .links {
+    padding: 9px 12px;
+  }
+}

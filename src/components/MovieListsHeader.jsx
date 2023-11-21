@@ -8,6 +8,7 @@ const MovieListsHeader = (props) => {
       <div className="header">
         <a className="headerLogo" href="/">
           <img src={props.logo} alt="Netflix Logo" className="netflixLogo" />
+          <img src={props.favIcon} alt="Netflix Logo" className="netflixIcon" />
         </a>
       </div>
       <div className="header">

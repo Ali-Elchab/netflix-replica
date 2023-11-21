@@ -27,7 +27,9 @@ const MovieCards = (genreId) => {
 
     // Fetch Genres
     const fetchAllGenres = () => {
-      fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
+      fetch(
+        `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
+      )
         .then((response) => response.json())
         .then((data) => {
           const genresMap = {};
@@ -75,12 +77,20 @@ const MovieCards = (genreId) => {
         <div key={genreId} className="genreList">
           <h2 className="genreTitle">{genreList[genreId]}</h2>
           <div className="movieList">
-            <MdChevronLeft onClick={() => slideLeft(genreId)} size={40} className="arrowLeft" />
+            <MdChevronLeft
+              onClick={() => slideLeft(genreId)}
+              size={40}
+              className="arrowLeft"
+            />
             <ul id={`slider-${genreId}`}>
               {moviesByGenre[genreId].map((movie) => (
                 <li className="movieCard" key={movie.id}>
                   <Link to={`/moviesdescription/${movie.id}`}>
-                    <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+                    <img
+                      className="poster"
+                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      alt={movie.title}
+                    />
                   </Link>
                   <p className="movieTitle">
                     <a href="/moviesdescription">{movie.title}</a>
@@ -88,7 +98,11 @@ const MovieCards = (genreId) => {
                 </li>
               ))}
             </ul>
-            <MdChevronRight onClick={() => slideRight(genreId)} size={40} className="arrowRight" />
+            <MdChevronRight
+              onClick={() => slideRight(genreId)}
+              size={40}
+              className="arrowRight"
+            />
           </div>
         </div>
       ))}

@@ -1,12 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../styles/movie-cards.css";
+import { Link } from "react-router-dom";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 // import { Link } from "react-router-dom";
 // import { json } from "react-router-dom";
 
-const MovieCards = () => {
+const MovieCards = (genreId) => {
   const [movieList, setMovieList] = useState([]);
   const [genreList, setGenres] = useState({});
+  const slideLeft = (genreId) => {
+    let slider = document.getElementById(`slider-${genreId}`);
+    if (slider) {
+      slider.scrollBy(-200, 0); // Scroll to the left by subtracting 500 pixels
+    }
+  };
 
+  const slideRight = (genreId) => {
+    let slider = document.getElementById(`slider-${genreId}`);
+    if (slider) {
+      slider.scrollBy(200, 0); // Scroll to the right by adding 500 pixels
+    }
+  };
   useEffect(() => {
     // My generated TMDB API key
     const apiKey = "c3abedee67f9d0c6922c117110e1f13a";
@@ -46,28 +60,23 @@ const MovieCards = () => {
   return (
     <div>
       {Object.keys(moviesByGenre).map((genreId) => (
-        <div key={genreId}>
+        <div key={genreId} className="genreList">
           <h2 className="genreTitle">{genreList[genreId]}</h2>
           <div className="movieList">
-            <ul
-              style={{
-                display: "flex",
-                overflowX: "hidden",
-                listStyleType: "none",
-              }}
-            >
+            <MdChevronLeft onClick={() => slideLeft(genreId)} size={40} className="arrow" />
+            <ul id={`slider-${genreId}`}>
               {moviesByGenre[genreId].map((movie) => (
                 <li className="movieCard" key={movie.id}>
-                  <a href="/moviesdescription" className="moviePoster">
+                  <Link to={`/moviesdescription/${movie.id}`}>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-                  </a>
+                  </Link>
                   <p className="movieTitle">
                     <a href="/moviesdescription">{movie.title}</a>
                   </p>
                 </li>
               ))}
             </ul>
-            <div className="movies-list-arrow">&gt;</div>
+            <MdChevronRight onClick={() => slideRight(genreId)} size={40} className="arrow" />
           </div>
         </div>
       ))}

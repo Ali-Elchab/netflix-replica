@@ -10,9 +10,14 @@
   margin-bottom: 10px;
 }
 
+.genreList {
+  margin: 0 3%;
+}
+
 .movieList {
-  position: relative;
-  width: 100%;
+  /* position: relative; */
+  /* width: 100%; */
+  overflow-x: auto;
   display: flex;
   align-items: center;
 }
@@ -21,8 +26,13 @@ ul {
   display: flex;
   margin: 16px 0;
   padding-bottom: 16px;
+  width: 100%;
+  overflow-x: scroll;
+  list-style-type: none;
 }
-
+ul::-webkit-scrollbar {
+  display: none;
+}
 .movieCard {
   width: 28vw;
   max-width: 299px;
@@ -30,7 +40,7 @@ ul {
   flex: 1 0 auto;
   list-style-type: none;
   margin: 0 12px 0 0;
-  position: relative;
+  /* position: relative; */
 }
 
 img {
@@ -47,4 +57,9 @@ img {
 .movieTitle a {
   text-decoration: none;
   color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  color: red;
 }

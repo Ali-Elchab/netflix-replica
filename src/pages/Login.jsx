@@ -6,6 +6,7 @@ import '../styles/hero-page.css'
 import Download from '../components/Download'
 import Stream from '../components/Stream'
 import ForKids from '../components/ForKids'
+import DropDown from '../components/DropDown'
 
 const Login = () => {
   return (
@@ -19,6 +20,9 @@ const Login = () => {
         <Stream />
         <SectionsSeperator/>
         <ForKids/>
+        <SectionsSeperator/>
+        <DropDown />
+        <SectionsSeperator/>
 
         
     </div>

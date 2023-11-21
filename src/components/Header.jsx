@@ -1,14 +1,13 @@
-import React from 'react'
-import {Link } from 'react-router-dom';
-
-const Header = () => {
+import React from "react";
+import { Link } from "react-router-dom";
+import MovieDescription from "../pages/MovieDescription";
+//820609
+const DescriptionPage = () => {
   return (
-    <ul>
-    <li>
-        <Link to='/movieslist'>movieslist</Link>
-    </li>
-    </ul>
-  )
-}
+    <div>
+      <MovieDescription />
+    </div>
+  );
+};
 
-export default Header
+export default DescriptionPage;

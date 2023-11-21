@@ -3,8 +3,6 @@ import "../styles/movie-cards.css";
 import { Link } from "react-router-dom";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { fetchMoviesByPage } from "../core/fetch";
-// import { Link } from "react-router-dom";
-// import { json } from "react-router-dom";
 
 const MovieCards = (genreId) => {
   const [movieList, setMovieList] = useState([]);
@@ -13,14 +11,14 @@ const MovieCards = (genreId) => {
   const slideLeft = (genreId) => {
     let slider = document.getElementById(`slider-${genreId}`);
     if (slider) {
-      slider.scrollBy(-1000, 0); // Scroll to the left by subtracting 500 pixels
+      slider.scrollBy(-1000, 0);
     }
   };
 
   const slideRight = (genreId) => {
     let slider = document.getElementById(`slider-${genreId}`);
     if (slider) {
-      slider.scrollBy(1000, 0); // Scroll to the right by adding 500 pixels
+      slider.scrollBy(1000, 0);
     }
   };
   useEffect(() => {
@@ -44,11 +42,11 @@ const MovieCards = (genreId) => {
     // Fetch Movies
 
     const fetchAllMovies = async () => {
-      const totalPages = 14;
+      const totalPages = 20;
       const allMovies = [];
       let route = "discover/movie";
       try {
-        for (let i = 1; i <= totalPages; i++) {
+        for (let i = 8; i <= totalPages; i++) {
           const movies = await fetchMoviesByPage(route, apiKey, i);
           allMovies.push(...movies);
         }

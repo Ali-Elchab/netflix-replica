@@ -12,12 +12,3 @@ export const fetchMoviesByPage = async (route, apiKey, pageNumber) => {
     return [];
   }
 };
-
-// export const requestFetch = async ({ route, method, body, pageNumber = 1 }) => {
-//   const response = fetch(`https://api.themoviedb.org/3/${route}?api_key=${apiKey}&page=${pageNumber}`, {
-//     method: method,
-//     body: JSON.stringify(body),
-//   });
-
-//   return response;
-// };

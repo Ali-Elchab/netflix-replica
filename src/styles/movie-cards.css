@@ -29,6 +29,8 @@ ul {
   width: 100%;
   overflow-x: scroll;
   list-style-type: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 ul::-webkit-scrollbar {
   display: none;

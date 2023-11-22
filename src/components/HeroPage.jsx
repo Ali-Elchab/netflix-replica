@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import Dropdown from './DropDown';<Dropdown/>
 import "../styles/hero-page.css";
-import logo from "../assets/images/Netflix_2015_logo.svg.png";
+import logo from "../assets/images/netflix-logo.png";
 import languageIcon from "../assets/images/languageIcon.svg";
 import listIcon from "../assets/images/listIcon.svg";
 
@@ -13,9 +13,11 @@ const HeroPage = () => {
         <div className="opacityBackground">
           <div className="navbarContainer">
             <div className="navbar">
-              <div className="logo">
-                <img src={logo} alt="logo" className="logo1"></img>
-              </div>
+              <Link to="/movieslist">
+                <div className="logo">
+                  <img src={logo} alt="logo" className="logo1"></img>
+                </div>
+              </Link>
               <div className="navbarLeft">
                 <button className="languageButton">
                   <img

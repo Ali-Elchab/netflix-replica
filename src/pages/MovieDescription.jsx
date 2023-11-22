@@ -8,13 +8,14 @@ import ComingSoonSection from "../components/ComingSoon";
 import MovieListsHeader from "../components/MovieListsHeader";
 import "../styles/Movie-Description.css";
 import { useParams } from "react-router-dom";
+import favIcon from "../assets/images/netflix-icon.png";
 
 const MovieDescription = () => {
   const { id } = useParams();
 
   return (
     <div className="Movie-Description-Container">
-      <MovieListsHeader logo={logo} />
+      <MovieListsHeader logo={logo} favIcon={favIcon} />
       <div className="movie-description-body">
         <MovieDetails id={parseInt(id)} />
         <AdditionalContent id={parseInt(id)} />

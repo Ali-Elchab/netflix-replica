@@ -131,7 +131,9 @@
   border-color: rgb(107, 106, 106);
   font-size: medium;
   font-weight: bold;
-  padding: 15px;
+  padding: 0 15px;
+  margin: 0;
+  box-sizing: border-box;
   margin-left: 15%;
   color: white;
 }

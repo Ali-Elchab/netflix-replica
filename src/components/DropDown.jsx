@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import "../styles/drop-down.css";
+import { Link } from "react-router-dom";
 
 const Dropdown = () => {
   const [openItemId, setOpenItemId] = useState(null);
@@ -9,12 +10,16 @@ const Dropdown = () => {
     setOpenItemId((prevId) => (prevId === itemId ? null : itemId));
   };
 
+  const getDescriptionVisibility = (itemId) => {
+    return openItemId === itemId ? "visible" : "hidden";
+  };
+
   const items = [
     {
       id: 1,
       title: "What is Netflix?",
       description:
-        "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!",
+        "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!",
     },
     {
       id: 2,
@@ -53,19 +58,32 @@ const Dropdown = () => {
       <p>Frequently Asked Questions</p>
       {items.map((item) => (
         <div key={item.id} className="key">
-          <button
-            className="buttonContainer"
-            onClick={() => toggleDropdown(item.id)}
-          >
-            {item.title}
-          </button>
+          <div className="faqColumn">
+            <button
+              className="buttonContainer"
+              onClick={() => toggleDropdown(item.id)}
+            >
+              {item.title}
+            </button>
+
+            <button
+              className="toggleButton"
+              onClick={() => toggleDropdown(item.id)}
+            >
+              {openItemId === item.id ? "x" : "+"}
+            </button>
+          </div>
 
           <CSSTransition
             in={openItemId === item.id}
+            timeout={20}
             classNames="dropdown"
             unmountOnExit
           >
-            <div className="dropDown">
+            <div
+              className="dropDown"
+              style={{ visibility: getDescriptionVisibility(item.id) }}
+            >
               <p>{item.description}</p>
             </div>
           </CSSTransition>
@@ -76,9 +94,11 @@ const Dropdown = () => {
           Ready to watch? Enter your email to create or restart your membership.
         </p>
       </div>
-      <div className="downButtons">
+      <div className="emailSubmit">
         <input type="text" placeholder="Email address" />
-        <button className="startedDownButton">Get Started &gt; </button>
+        <Link to="/movieslist" className="startedButtonLink">
+          <button className="startedButton">Get Started &gt; </button>
+        </Link>
       </div>
     </div>
   );

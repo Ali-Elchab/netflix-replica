@@ -1,26 +1,23 @@
 .stream {
-  width: 100vw;
-  height: 80vh;
   display: flex;
+  min-height: auto;
+  padding: 4.5rem 0;
   flex-direction: row;
   background-color: black;
-  overflow: hidden;
+  justify-content: center;
+  width: 100vw;
 }
 
 .streamDescription {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  width: 38%;
 }
 
 .streamDescription > p:nth-child(1) {
   font-size: 50px;
   font-weight: 800;
-  margin-left: 110px;
   color: white;
   margin-bottom: 20px;
 }
@@ -29,31 +26,51 @@
   font-size: 25px;
   color: white;
   margin-top: 2px;
-  margin-left: 190px;
-  /* margin-bottom: 50px; */
 }
 
 .streamTvImage {
   position: relative;
-  width: 50%;
-  height: 100%;
-  margin-top: 5%;
+  width: 38%;
+  z-index: 1;
 }
 
 .streamImage {
-  position: absolute;
   z-index: 2;
-  top: 20px;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+  width: 100%;
 }
 
 .streamVideo {
   position: absolute;
-  z-index: 1;
-  top: 13%;
-  left: 15%;
-  width: 50%;
+  width: 63%;
+  height: 55%;
+  object-fit: cover;
+  z-index: -1;
+  top: 10%;
+  left: 18%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stream {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .streamDescription {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .streamDescription > p:nth-child(1) {
+    font-size: 32px;
+  }
+
+  .streamDescription > p:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .streamTvImage {
+    width: 80%;
+    margin-top: 50px;
+  }
 }

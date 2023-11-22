@@ -9,8 +9,8 @@ const Stream = () => {
       <div className="streamDescription">
         <p>Watch everywhere</p>
         <p>
-          Stream unlimited movies and TV shows on your <br /> phone, tablet,
-          laptop, and TV.
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
         </p>
       </div>
 

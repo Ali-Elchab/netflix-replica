@@ -14,32 +14,42 @@ const HeroPage = () => {
           <div className="navbarContainer">
             <div className="navbar">
               <div className="logo">
-                <img src={logo} alt="logo" className="logo"></img>
+                <img src={logo} alt="logo" className="logo1"></img>
               </div>
               <div className="navbarLeft">
                 <button className="languageButton">
-                  <img src={languageIcon} alt="" className="languageIcon"></img>
-                  English
-                  <img src={listIcon} alt="" className="listIcon"></img>
+                  <img
+                    src={languageIcon}
+                    alt="language Icon"
+                    className="languageIcon"
+                  ></img>
+                  <p className="languageName">English</p>
+                  <img
+                    src={listIcon}
+                    alt="list Icon"
+                    className="listIcon"
+                  ></img>
                 </button>
-                <Link to="/movieslist" className="signinButtonLink">
-                  <button className="signinButton">Sign In</button>
-                </Link>
+                <a href="/movieslist" className="signinButtonLink">
+                  Sign In
+                </a>
               </div>
             </div>
           </div>
 
           <div className="heroDescription">
             <h1>Unlimited movies, TV shows, and more</h1>
-            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Plans now start at USD3.99/month.</p>
             <p>
               Ready to watch? Enter your email to create or restart your
               membership.
             </p>
-            <input type="text" placeholder="Email address" />
-            <Link to="/movieslist" className="startedButtonLink">
-              <button className="startedButton">Get Started &gt; </button>
-            </Link>
+            <div className="emailSubmit">
+              <input type="text" placeholder="Email address" />
+              <Link to="/movieslist" className="startedButtonLink">
+                <button className="startedButton">Get Started &gt; </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

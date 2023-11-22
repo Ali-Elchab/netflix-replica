@@ -9,9 +9,8 @@ const EnjoyTv = () => {
       <div className="enjoyTvDescription">
         <p>Enjoy on your TV</p>
         <p>
-          Watch on Smart TVs, Playstation, Xbox, Chromecast,
-          <br />
-          Apple TV, Blu-ray players, and more.
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.
         </p>
       </div>
 

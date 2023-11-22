@@ -2,7 +2,6 @@ import React from "react";
 import HeroPage from "../components/HeroPage";
 import EnjoyTv from "../components/EnjoyTv";
 import SectionsSeperator from "../components/SectionsSeperator";
-// import "../styles/hero-page.css";
 import Download from "../components/Download";
 import Stream from "../components/Stream";
 import ForKids from "../components/ForKids";
@@ -24,11 +23,17 @@ const Login = () => {
       <SectionsSeperator />
       <DropDown />
       <SectionsSeperator />
-      <footer className="footer">
+      <footer className="footer" style={styles}>
         <Footer />
       </footer>
     </div>
   );
+};
+
+const styles = {
+  backgroundColor: `#000`,
+  marginTop: `0`,
+  padding: `56px`,
 };
 
 export default Login;

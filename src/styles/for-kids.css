@@ -1,20 +1,18 @@
 .download {
-  width: 100vw;
-  height: 80vh;
   display: flex;
+  min-height: auto;
+  padding: 4.5rem 0;
   flex-direction: row;
-  justify-content: center;
   background-color: black;
+  justify-content: center;
+  width: 100vw;
 }
 
 .forKidsDescription {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  width: 38%;
 }
 
 .forKidsDescription > p:nth-child(1) {
@@ -22,18 +20,47 @@
   font-weight: 800;
   color: white;
   margin-bottom: 20px;
-  margin-right: 6%;
 }
 
 .forKidsDescription > p:nth-child(2) {
   font-size: 25px;
   color: white;
-  width: 100%;
   margin-top: 2px;
 }
 
-.downloadPhoneImage {
+.phoneImage2 {
   position: relative;
-  width: 50%;
+  width: 95%;
+}
+
+.downloadPhoneImage2 {
+  position: relative;
+  width: 38%;
   height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .download {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .forKidsDescription {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .forKidsDescription > p:nth-child(1) {
+    font-size: 32px;
+  }
+
+  .forKidsDescription > p:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .downloadPhoneImage2 {
+    width: 80%;
+    margin-top: 50px;
+  }
 }

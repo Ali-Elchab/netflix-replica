@@ -11,7 +11,7 @@
 }
 
 .genreList {
-  margin: 0 3%;
+  margin: 0 2%;
 }
 
 .movieList {
@@ -36,7 +36,6 @@ ul::-webkit-scrollbar {
   display: none;
 }
 .movieCard {
-  width: 28vw;
   max-width: 299px;
   display: inline-table;
   flex: 1 0 auto;
@@ -45,9 +44,9 @@ ul::-webkit-scrollbar {
   /* position: relative; */
 }
 
-.poster {
+.poster-image {
+  width: 23vw;
   height: 15vw;
-  width: 100%;
   max-height: 168px;
 }
 
@@ -74,5 +73,44 @@ ul::-webkit-scrollbar {
   .arrowRight,
   .arrowLeft {
     display: none;
+  }
+
+  .poster-image {
+    width: 40vw;
+  }
+
+  .genreTitle {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .movieTitle {
+    font-size: 13px;
+    width: 40vw;
+  }
+
+  ul {
+    margin: 10px 0;
+    padding-bottom: 0;
+  }
+
+  .movieCards {
+    margin-top: 0;
+  }
+
+  .poster-image {
+    height: 22vw;
+  }
+
+  .watchWrapper h2 {
+    font-size: 27px;
+  }
+
+  .watchWrapper {
+    padding: 10px;
+  }
+
+  .watchWrapper .btn {
+    width: 100%;
   }
 }

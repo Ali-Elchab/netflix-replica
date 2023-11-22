@@ -1,49 +1,39 @@
-.download{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black
+.download {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
 }
 
-.forKidsDescription{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+.forKidsDescription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-.forKidsDescription > p:nth-child(1){
-    font-size: 50px;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 20px; 
-    margin-right: 6%;  
+.forKidsDescription > p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  margin-right: 6%;
 }
 
-.forKidsDescription > p:nth-child(2){
-    font-size: 25px;
-    color: white;
-    width: 100%;
-    margin-top: 2px;
-    margin-left: 20%;
-   
+.forKidsDescription > p:nth-child(2) {
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  margin-top: 2px;
 }
 
-.phoneImage{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20%;
+.downloadPhoneImage {
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
-
-.downloadPhoneImage{
-    position: relative;
-    width: 50%;
-    height: 100%;
-}
-
-

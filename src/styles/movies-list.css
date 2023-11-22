@@ -110,4 +110,8 @@
   .bodyDesc {
     font-size: 16px;
   }
+
+  .footerLinkItem {
+    width: 50%;
+  }
 }

@@ -8,16 +8,11 @@ const Footer = () => {
     <div className="footerContainer">
       <div className="footerWrapper">
         <p className="top">
-          <a href="https://help.netflix.com/contactus">
-            Questions? Contact us.
-          </a>
+          <a href="https://help.netflix.com/contactus">Questions? Contact us.</a>
         </p>
         <ul className="footerLinks">
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://help.netflix.com/support/412"
-            >
+            <a className="footerLink" href="https://help.netflix.com/support/412">
               FAQ
             </a>
           </li>
@@ -52,34 +47,22 @@ const Footer = () => {
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://help.netflix.com/legal/termsofuse"
-            >
+            <a className="footerLink" href="https://help.netflix.com/legal/termsofuse">
               Terms of Use
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://help.netflix.com/legal/privacy"
-            >
+            <a className="footerLink" href="https://help.netflix.com/legal/privacy">
               Privacy
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://www.netflix.com/lb-en/browse/genre/34399#"
-            >
+            <a className="footerLink" href="https://www.netflix.com/lb-en/browse/genre/34399#">
               Cookie Preferences
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://help.netflix.com/legal/corpinfo"
-            >
+            <a className="footerLink" href="https://help.netflix.com/legal/corpinfo">
               Corporate Information
             </a>
           </li>
@@ -94,18 +77,12 @@ const Footer = () => {
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://help.netflix.com/legal/notices"
-            >
+            <a className="footerLink" href="https://help.netflix.com/legal/notices">
               Legal Notices
             </a>
           </li>
           <li className="footerLinkItem">
-            <a
-              className="footerLink"
-              href="https://www.netflix.com/lb-en/browse/genre/839338"
-            >
+            <a className="footerLink" href="https://www.netflix.com/lb-en/browse/genre/839338">
               Only on Netflix
             </a>
           </li>
@@ -114,11 +91,7 @@ const Footer = () => {
           <div className="selectionWrapper">
             <div className="selectArrow">
               <img src={globeIcon} alt="globe icon" className="globeIcon" />
-              <img
-                src={dropdownIcon}
-                alt="dropdown icon"
-                className="dropdownIcon"
-              />
+              <img src={dropdownIcon} alt="dropdown icon" className="dropdownIcon" />
               <select defaultValue="en" className="selectBox" tabIndex={0}>
                 <option value="ar">العربية</option>
                 <option value="en">English</option>

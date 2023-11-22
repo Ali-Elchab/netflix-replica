@@ -1,61 +1,55 @@
-.enjoyTv{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    background-color: black
+.enjoyTv {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
 }
 
-.enjoyTvDescription{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+.enjoyTvDescription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-.enjoyTvDescription > p:nth-child(1){
-    font-size: 50px;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 20px;   
+.enjoyTvDescription > p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.enjoyTvDescription > p:nth-child(2){
-    font-size: 25px;
-    color: white;
-    margin-top: 2px;
-    margin-left: 21%;
-    /* margin-bottom: 50px; */
-  
+.enjoyTvDescription > p:nth-child(2) {
+  font-size: 25px;
+  color: white;
+  margin-top: 2px;
+  padding-left: 150px;
 }
 
-.enjoyTvImage{
-    position: relative;
-    width: 50%;
-    height: 100%;
-
+.enjoyTvImage {
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
 
-.tvImage{
-    position: absolute;
-    z-index: 2;
-    top: 20px;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+.tvImage {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
 }
 
-.tvVideo{
-    position: absolute;
-    z-index: 1;
-    top: 20.1%;
-    left: 10%;
-    width: 457px;
-    height: 255px;
-    object-fit: cover;
-  
+.tvVideo {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 10%;
+  width: 60%;
 }

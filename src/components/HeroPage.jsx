@@ -18,7 +18,8 @@ const HeroPage = () => {
               </div>
               <div className="navbarLeft">
                 <button className="languageButton">
-                  <img src={languageIcon} alt="" className="languageIcon"></img>English
+                  <img src={languageIcon} alt="" className="languageIcon"></img>
+                  English
                   <img src={listIcon} alt="" className="listIcon"></img>
                 </button>
                 <Link to="/movieslist" className="signinButtonLink">
@@ -31,7 +32,10 @@ const HeroPage = () => {
           <div className="heroDescription">
             <h1>Unlimited movies, TV shows, and more</h1>
             <p>Watch anywhere. Cancel anytime.</p>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
             <input type="text" placeholder="Email address" />
             <Link to="/movieslist" className="startedButtonLink">
               <button className="startedButton">Get Started &gt; </button>

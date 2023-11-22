@@ -1,91 +1,89 @@
-.download{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black
+.download {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
 }
 
-.downloadDescription{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+.downloadDescription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 25px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-.downloadDescription > p:nth-child(1){
-    font-size: 50px;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 20px;   
+.downloadDescription > p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 25px;
 }
 
-.downloadDescription > p:nth-child(2){
-    font-size: 25px;
-    color: white;
-    margin-top: 2px;
-    margin-right: 39%;
-   
+.downloadDescription > p:nth-child(2) {
+  font-size: 25px;
+  color: white;
 }
 
-.phoneImage{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20%;
+.phoneImage {
+  position: relative;
+  max-height: 100%;
+  padding-top: 100px;
+  margin-left: 20%;
 }
 
-.downloadPhoneImage{
-    position: relative;
-    width: 50%;
-    height: 100%;
+.downloadPhoneImage {
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
 
-
-.containerOnPhone{
-    position: absolute;
-    width: 340px;
-    height: 110px;
-    z-index: 2;
-    top: 60%;
-    left: 40%;
-    border-radius: 10px;
-    border: solid 2px rgb(95, 95, 95);
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
+.containerOnPhone {
+  position: absolute;
+  width: 340px;
+  height: 110px;
+  z-index: 2;
+  top: 60%;
+  left: 35%;
+  border-radius: 10px;
+  border: solid 2px rgb(95, 95, 95);
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
 }
 
-.margin{
-    margin: 10px;
-    width: 70px;
-    height: 90px;
+.margin {
+  margin: 10px;
+  width: 70px;
+  height: 90px;
 }
-.flex{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-}
-
-.flex > p:nth-child(1){
-    color: white;
-    font-size:large;
-    font-weight: 600;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
 }
 
-.flex > p:nth-child(2){
-    color: blue;
-    font-weight: 200;
+.flex > p:nth-child(1) {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-.downloadIcon{
-    width: 50px;
-    height: 50px;
-    margin-left: 15%;
+.flex > p:nth-child(2) {
+  color: blue;
+  font-weight: 200;
+}
+
+.downloadIcon {
+  width: 50px;
+  height: 50px;
+  margin-left: 15%;
 }

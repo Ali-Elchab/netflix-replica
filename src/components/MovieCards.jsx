@@ -87,7 +87,7 @@ const MovieCards = (genreId) => {
                 <li className="movieCard" key={movie.id}>
                   <Link to={`/moviesdescription/${movie.id}`}>
                     <img
-                      className="poster"
+                      className="poster-image"
                       src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                       alt={movie.title}
                     />

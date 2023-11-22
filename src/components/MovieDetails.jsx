@@ -27,9 +27,9 @@ const MovieDetails = ({ id }) => {
   const castMembers = movieData.credits?.cast || [];
   console.log(movieData);
   const backgroundStyles = {
-    backgroundImage: `linear-gradient(to top right , rgba(23, 23, 23,1) 0%, rgba(23, 23, 23,0.1) 100%), url(https://image.tmdb.org/t/p/original${movieData.poster_path})`,
+    backgroundImage: `linear-gradient(to  right , rgba(23, 23, 23,1) 0%, rgba(23, 23, 23,0.2) 110%), url(https://image.tmdb.org/t/p/original${movieData.poster_path})`,
     backgroundSize: "cover",
-    backgroundPosition: "center top",
+    backgroundPosition: "left",
     backgroundRepeat: "no-repeat",
     position: "relative",
   };

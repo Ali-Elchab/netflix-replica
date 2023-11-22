@@ -57,13 +57,11 @@ ul::-webkit-scrollbar {
   color: #fff;
 }
 
-.arrowLeft {
-  cursor: pointer;
-  color: red;
-}
+.arrowLeft,
 .arrowRight {
   cursor: pointer;
   color: red;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {

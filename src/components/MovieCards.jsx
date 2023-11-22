@@ -3,7 +3,6 @@ import "../styles/movie-cards.css";
 import { Link } from "react-router-dom";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { fetchMoviesByPage } from "../core/fetch";
-
 const MovieCards = (genreId) => {
   const [movieList, setMovieList] = useState([]);
   const [genreList, setGenres] = useState({});

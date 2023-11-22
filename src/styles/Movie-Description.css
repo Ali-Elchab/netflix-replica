@@ -1,19 +1,28 @@
 body {
   padding: 0;
+  margin: 0;
   background-color: #181818;
 }
-
+.movie-description-body {
+  margin: 0 auto;
+  max-width: 1800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .movie-details {
   height: calc(100vh - 100px);
   color: white;
-  padding: 25px 5vw;
+  padding: 25px 3vw;
   text-align: left;
   overflow-y: hidden;
+  position: absolute;
 }
 
 .movie-name {
-  font-size: 92px;
-  margin-bottom: 10px;
+  font-size: 60px;
+  color: #cf000a;
+  margin-bottom: 25px;
   margin-top: 300px;
   max-width: 700px;
 }
@@ -22,17 +31,17 @@ body {
 .mini-description,
 .story-line,
 .stars {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .additional-content {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 25px 5vw;
-  margin: 20px 0;
+  align-items: flex-start;
+  padding: 0 3vw;
   height: 65vh;
+  margin-bottom: 30px;
 }
 
 .split-box {
@@ -42,13 +51,14 @@ body {
   box-shadow: 8px 5px 16px 0 rgba(0, 0, 0, 0.37);
   width: 95%;
   height: 50px;
-  background-color: #333;
+  padding: 5px;
+  background: linear-gradient(rgba(51, 51, 51, 0.5) 0%, rgba(23, 23, 23, 0.8) 100%);
 }
 
 .split-box-logo {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 40px;
   padding-left: 20px;
 }
 
@@ -151,21 +161,21 @@ body {
   margin-bottom: 5px;
 }
 .more-like-this {
-  width: 100%;
+  width: auto;
+  padding: 25px 3vw;
 }
 
 .more-like-this h2 {
   color: white;
   font-size: 24px;
   margin-bottom: 10px;
-  padding: 25px 5vw;
+  padding: 25px 0;
 }
 
 .similar-movies {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  /* padding: 25px 5vw; */
 }
 
 .similar-movies img {
@@ -176,21 +186,18 @@ body {
 }
 
 .coming-soon-section {
-  width: 100%;
   text-align: left;
   margin-top: 50px;
-  padding: 25px 5vw;
+  padding: 25px 3vw;
 }
 
 .coming-soon-items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  width: 70%;
-}
-
-.coming-soon-item {
-  width: 350px;
+  grid-template-columns: 23% 23% 23% 23%;
+  padding-right: 15%;
+  grid-gap: 15px;
+  padding: 0 5% 0 0;
+  width: 100%;
 }
 
 .coming-soon-item h3 {
@@ -207,9 +214,6 @@ body {
   font-size: 14px;
 }
 
-.coming-soon-text {
-  color: #a3a3a3;
-}
 .additional-movie-details h2,
 .coming-soon-section h2 {
   color: #fff;
@@ -229,9 +233,105 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  max-width: 450px;
+  max-width: 700px;
 }
 .mini-description,
 .starring-label {
   color: #a3a3a3;
+}
+
+@media only screen and (max-width: 600px) {
+  .movie-details {
+    height: calc(90vh - 100px);
+    margin-bottom: 15px;
+    padding: 25px 0vw;
+  }
+
+  .movie-name {
+    font-size: 40px;
+    width: 300px;
+  }
+
+  .details-overlay {
+    padding: 0 5vw;
+    background-color: #181818;
+    width: 100vw;
+  }
+
+  .stars {
+    line-height: 0;
+  }
+
+  .additional-content {
+    height: auto;
+    margin: 0;
+    padding: 0 5vw;
+  }
+
+  .mini-movie-name,
+  .mini-description,
+  .story-line,
+  .stars {
+    padding-right: 20px;
+  }
+
+  .details-section {
+    flex-direction: column;
+  }
+
+  .detail-box {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .cast-names {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .cast-column {
+    width: auto;
+  }
+
+  .cast-name {
+    font-size: 14px;
+  }
+  .more-like-this {
+    padding: 25px 5vw;
+  }
+
+  .more-like-this h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 0 0 25px 0;
+  }
+
+  .similar-movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .similar-movies img {
+    height: 120px;
+    object-fit: fill;
+    cursor: pointer;
+  }
+
+  .coming-soon-section {
+    margin-top: 0px;
+    padding: 25px 5vw;
+  }
+
+  .coming-soon-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coming-soon-section h3 {
+    margin: 5px 0;
+  }
+
+  .coming-soon-item p {
+    margin: 5px 0;
+  }
 }

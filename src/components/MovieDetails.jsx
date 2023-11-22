@@ -5,7 +5,6 @@ const MovieDetails = ({ id }) => {
   const [loading, setLoading] = useState(true);
   const movieId = parseInt(id); // Your movie ID
   const apiKey = "6382d87ef0c27311d6d318b11bd9ec07";
-
   useEffect(() => {
     const apiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`;
 
@@ -26,15 +25,14 @@ const MovieDetails = ({ id }) => {
   }
 
   const castMembers = movieData.credits?.cast || [];
-
+  console.log(movieData);
   const backgroundStyles = {
-    backgroundImage: `url(https://image.tmdb.org/t/p/original${movieData.poster_path})`,
+    backgroundImage: `linear-gradient(to top right , rgba(23, 23, 23,1) 0%, rgba(23, 23, 23,0.1) 100%), url(https://image.tmdb.org/t/p/original${movieData.poster_path})`,
     backgroundSize: "cover",
-
-    backgroundPosition: "center",
+    backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
+    position: "relative",
   };
-
   return (
     <div className="movie-details" style={backgroundStyles}>
       <div className="details-overlay">
@@ -48,7 +46,7 @@ const MovieDetails = ({ id }) => {
         </div>
         <div className="story-line">{movieData.overview}</div>
         <div className="stars">
-          <span className="starring-label">Starring: </span>
+          <span className="starring-label">Starring: {castMembers} </span>
           <span className="actor-list">
             {castMembers
               .slice(0, 3)

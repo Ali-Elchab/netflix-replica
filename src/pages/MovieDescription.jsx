@@ -15,10 +15,12 @@ const MovieDescription = () => {
   return (
     <div className="Movie-Description-Container">
       <MovieListsHeader logo={logo} />
-      <MovieDetails id={parseInt(id)} />
-      <AdditionalContent id={parseInt(id)} />
-      <MoreLikeThis />
-      <ComingSoonSection />
+      <div className="movie-description-body">
+        <MovieDetails id={parseInt(id)} />
+        <AdditionalContent id={parseInt(id)} />
+        <MoreLikeThis />
+        <ComingSoonSection />
+      </div>
       <footer className="footer">
         <Footer />
       </footer>

@@ -26,7 +26,7 @@ const AdditionalContent = ({ id }) => {
       .catch((error) => {
         console.error("Error fetching cast data:", error);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div className="additional-content">

@@ -36,13 +36,13 @@ ul::-webkit-scrollbar {
 .movieCard {
   max-width: 299px;
   display: inline-table;
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   list-style-type: none;
   margin: 0 12px 0 0;
 }
 
 .poster-image {
-  width: 23vw;
+  width: 15vw;
   height: 15vw;
   max-height: 168px;
 }

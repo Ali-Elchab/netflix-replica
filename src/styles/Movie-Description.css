@@ -2,8 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #181818;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
-    sans-serif;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 .movie-description-body {
@@ -76,7 +75,7 @@ body {
   font-size: 60px;
   color: #cf000a;
   margin-bottom: 25px;
-  margin-top: 300px;
+  margin-top: 210px;
   max-width: 700px;
 }
 
@@ -105,10 +104,7 @@ body {
   width: 95%;
   height: 50px;
   padding: 5px;
-  background: linear-gradient(
-    rgba(51, 51, 51, 0.5) 0%,
-    rgba(23, 23, 23, 0.8) 100%
-  );
+  background: linear-gradient(rgba(51, 51, 51, 0.5) 0%, rgba(23, 23, 23, 0.8) 100%);
 }
 
 .split-box-logo {
